@@ -2,7 +2,12 @@
     "routes":[
         {
             "route": "/api/*",
-            "redirect": "/.auth/login/aad"
+            "redirect": "/.auth/login/aad",
+            "allowedRoles": ["authenticated"]
+        },
+        {
+            "route": "/index.html",
+            "allowedRoles": ["anonymous"]
         }
     ]
     
